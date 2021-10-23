@@ -1,0 +1,239 @@
+<!-- 
+    coded by alireza mohammadi ;
+    github: github.com/wwwAlireza ;
+    codepen: codepen.io/alireza82 ;
+    linkedin: linkedin.com/in/wwwAlireza ;
+    email: alireza.mhm02@gmail.com ;
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GitUsers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="engine/style/mainStyle.css">
+    <link rel="stylesheet" href="engine/style/anim.css">
+    <link rel="stylesheet" href="engine/wowAlert/styleSheet/wowAlertStyles.css">
+    <link rel="shortcut icon" href="content/icons/github.png">
+</head>
+
+<body draggable="false">
+    <div id="loading" class="d-none">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div class="up-navbar col-12">
+        <div class="navbar-logo-container">
+            <a href="https://github.com/wwwAlireza/GitInfo" target="_blank">
+                <img draggable="false" src="content/icons/github.png" alt="error" class="navbar-logo">
+            </a>
+            <a href="https://github.com/wwwAlireza/GitInfo"><span class="navbar-title">GitUsers</span></a>
+        </div>
+        <div class="navbar-input-container ms-3">
+            <input type="text" class="navbar-input form-control" placeholder="username" maxlength="20" spellcheck="false" autocomplete="off" id="input-username">
+            <button type="button" class="btn btn-outline-success navbar-input-btn" id="get-btn">Get</button>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="content-container col-12 flex-column flex-sm-row">
+        <!-- left -->
+        <div class="left-container col-12 col-xxl-4 col-lg-4 col-md-4 col-sm-6">
+            <div class="profile-avatar-container col-7 col-xxl-7 col-xl-8 col-lg-9 col-md-10 col-sm-10">
+                <a href="https://avatars.githubusercontent.com/u/87311500?v=4" id="download-avatar" download="download">
+                    <button type="button" class="btn btn-success download-avatar-btn">
+                        <div class="download-icon"></div>
+                    </button>
+                </a>
+                <img src="content/icons/github.png" draggable="false" class="profile-avatar" alt="avatar-image" id="profile-avatar">
+                <div class="profile-info-bio-container align-self-xxl-start align-self-xl-center align-self-lg-start align-self-md-start align-self-sm-start align-self-start ms-3 ms-sm-0 mt-4">
+                    <p class="profile-info-bio" id="profile-bio">
+                        --
+                    </p>
+                </div>
+            </div>
+            <div class="p-1"></div>
+            <div class="profile-info-container col-9 col-xxl-9 col-xl-9 col-lg-10 col-md-10 col-sm-9">
+                <a href="https://github.com/wwwAlireza" id="profile-username-link" target="_blank">
+                    <div class="profile-info-item">
+                        <div class="github-icon profile-info-item-icon"></div>
+                        <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Username" id="profile-username">wwwAlireza</span>
+                    </div>
+                </a>
+
+                <div class="profile-info-item">
+                    <div class="user-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Name" id="profile-name">alireza mhm</span>
+                </div>
+
+                <a href="" id="profile-blog-link" target="_blank">
+                    <div class="profile-info-item">
+                        <div class="web-icon profile-info-item-icon"></div>
+                        <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Blog" id="profile-blog">codepen.io/alireza82</span>
+                    </div>
+                </a>
+
+                <div class="profile-info-item">
+                    <div class="email-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="E-mail" id="profile-email">alireza.mhm02@gmail.com</span>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="company-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Company" id="profile-company">None</span>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="node-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Node id" id="profile-nodeid">MDQ6VXNlcjg3MzExNTAw</span>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="type-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Type" id="profile-type">User</span>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="id-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="id" id="profile-id">87311500</span>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="location-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Location" id="profile-location">None</span>
+                </div>
+
+                <div class="profile-info-item">
+                    <div class="hireable-icon profile-info-item-icon"></div>
+                    <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="Hireable" id="profile-hireable">None</span>
+                </div>
+
+                <a href="" id="profile-twitter-link" target="_blank">
+                    <div class="profile-info-item">
+                        <div class="twitter-icon profile-info-item-icon"></div>
+                        <span class="profile-info-item-title" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-offset="0,10" title="twitter" id="profile-twitter">None</span>
+                    </div>
+                </a>
+
+                <div class="coded-by">
+                    <a href="https://github.com/wwwAlireza/GitUsers" target="_blank">
+                        Coded by alireza MHM
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- right -->
+        <div class="right-container col-12 col-xxl-8 col-lg-8 col-md-8 col-sm-6">
+            <div class="up-statistics-container col-12">
+
+                <div class="up-statistics-follow" id="up-statistics-followers">
+                    <div class="follow-icon up-statistics-icon"></div>
+                    <div class="show-statistics">
+                        <span>Followers</span>
+                        <span id="profile-followers">--</span>
+                    </div>
+                </div>
+
+                <div class="up-statistics-follow" id="up-statistics-following">
+                    <div class="follow-icon up-statistics-icon"></div>
+                    <div class="show-statistics">
+                        <span>Following</span>
+                        <span id="profile-following">--</span>
+                    </div>
+                </div>
+
+                <div class="up-statistics-follow" id="up-statistics-repositories">
+                    <div class="repositori-icon up-statistics-icon"></div>
+                    <div class="show-statistics">
+                        <span>Repositories</span>
+                        <span id="profile-repositories">--</span>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="center-statistics-container col-12">
+                <div class="center-statistics">
+                    <div class="center-statistics-item" id="center-statistics-starred" style="cursor: pointer;">
+                        <div class="starred-icon center-statistics-item-icon"></div>
+                        <span class="center-statistics-item-title">Starred Repositories : <span id="profile-starred">undefined</span></span>
+                    </div>
+
+                    <div class="center-statistics-item mt-2" id="center-statistics-public" style="cursor: pointer;">
+                        <div class="repositori-icon center-statistics-item-icon"></div>
+                        <span class="center-statistics-item-title">Public Repositories : <span id="profile-public">--</span></span>
+                    </div>
+                </div>
+                <div class="center-statistics">
+                    <div class="center-statistics-item">
+                        <div class="create-icon center-statistics-item-icon"></div>
+                        <span class="center-statistics-item-title" style="white-space: nowrap;">join github : <span id="profile-join">--</span></span>
+                    </div>
+
+                    <div class="center-statistics-item mt-2">
+                        <div class="update-icon center-statistics-item-icon"></div>
+                        <span class="center-statistics-item-title" style="white-space: nowrap;">update at : <span id="profile-update">--</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="down-statistics-container col-12">
+                <div class="down-statistics">
+                    <p class="mb-0 down-statistics-text">
+                        <span id="profile-description">
+                            --
+                        </span>
+                        <div class="p-2"></div>
+                        <p class="mb-0">
+                            What do you know about GitHub?<br>
+                            <b>GitHub, Inc</b>. is a provider of Internet hosting for software development and version control using <a href="https://en.wikipedia.org/wiki/Git">Git</a>. It offers the distributed version control and source code management
+                            (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. Headquartered
+                            in California, it has been a subsidiary of Microsoft since 2018.GitHub offers its basic services free of charge. Its more advanced professional and enterprise services are commercial.Free GitHub accounts are commonly used to
+                            host open-source projects. As of January 2019, GitHub offers unlimited private repositories to all plans, including free accounts, but allowed only up to three collaborators per repository for free.Starting from April 15, 2020,
+                            the free plan allows unlimited collaborators, but restricts private repositories to 2,000 minutes of GitHub Actions per month. As of January 2020, GitHub reports having over 40 million users and more than 190 million repositories
+                            (including at least 28 million public repositories), making it the largest host of source code in the world. Development of the GitHub.com platform began on October 19, 2007. The site was launched in April 2008 by Tom Preston-Werner,
+                            Chris Wanstrath, P. J. Hyett and Scott Chacon after it had been made available for a few months prior as a beta release
+                        </p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--d-none-->
+    <div class="popup-container col-11 col-sm-10 col-md-8 col-lg-7 col-xxl-6 d-none" id="popup-container">
+        <p class="popup-no-result" id="popup-no-result">No Results Found</p>
+        <div class="popup-header">
+            <span class="popup-header-title ms-3" id="popup-header-title">Repositories</span>
+            <div class="close-popup me-2" id="popup-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-followers-container justify-content-around d-none" id="popup-followers-container">
+            </div>
+            <div class="popup-followers-container justify-content-around d-none" id="popup-following-container">
+            </div>
+            <div class="popup-repositories-container justify-content-start d-none" id="popup-repositories-container">
+            </div>
+            <div class="popup-repositories-container justify-content-start d-none" id="popup-starred-container">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="engine/wowAlert/script/wowAlert.js"></script>
+<script src="engine/source/bootstrapSettings.js"></script>
+<script src="engine/source/mainScript.js"></script>
+<script src="engine/source/icons.js"></script>
+
+</html>

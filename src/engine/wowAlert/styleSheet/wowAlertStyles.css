@@ -1,0 +1,582 @@
+/*****
+  This library has not yet been published
+  and is under construction (by wwwAlireza) 
+ *****/
+
+.wowAlert-container {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+    min-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid;
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+    display: none;
+}
+
+#wowAlert-text {
+    width: 80%;
+}
+
+.wowAlert-success {
+    border-color: #badbcc;
+    background-color: #d1e7dd;
+}
+
+.wowAlert-success * {
+    stroke: #0f5132;
+    color: #0f5132;
+}
+
+.wowAlert-danger {
+    border-color: #f5c6cb;
+    background-color: #f8d7da;
+}
+
+.wowAlert-danger * {
+    stroke: #721c24;
+    color: #721c24;
+}
+
+.wowAlert-warning {
+    border-color: #ffeeba;
+    background-color: #fff3cd;
+}
+
+.wowAlert-warning * {
+    stroke: #856404;
+    color: #856404;
+}
+
+.wowAlert-info {
+    border-color: #b8daff;
+    background-color: #cce5ff;
+}
+
+.wowAlert-info * {
+    stroke: #004085;
+    color: #004085;
+}
+
+.wowAlert-dark {
+    border-color: #c6c8ca;
+    background-color: #d6d8d9;
+}
+
+.wowAlert-dark * {
+    stroke: #818182;
+    color: #818182;
+}
+
+.wowAlert-light {
+    border-color: #fdfdfe;
+    background-color: #fefefe;
+}
+
+.wowAlert-light * {
+    stroke: #1b1e21;
+    color: #1b1e21;
+}
+
+.wowoAlert-close-container {
+    padding: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.wowoAlert-close-container:hover {
+    opacity: .8;
+}
+
+.wowoAlert-close-container #wowAlert-close {
+    margin-top: 4px;
+}
+
+@media screen and (min-width: 1400px) {
+    .wowAlert-container {
+        width: 40%;
+        margin: 10px 30%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .wowAlert-container {
+        width: 45%;
+        margin: 10px 27.5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wowAlert-container {
+        width: 50%;
+        margin: 10px 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wowAlert-container {
+        width: 50%;
+        margin: 10px 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wowAlert-container {
+        width: 55%;
+        margin: 10px 22.5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .wowAlert-container {
+        width: 75%;
+        margin: 10px 12.5%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .wowAlert-container {
+        width: 80%;
+        margin: 10px 10%;
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInDown-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+}
+
+@keyframes fadeInDown-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+}
+
+.fadeInDown-close {
+    -webkit-animation-name: fadeInDown-close;
+    animation-name: fadeInDown-close;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInLeft-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+}
+
+@keyframes fadeInLeft-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+    }
+}
+
+.fadeInLeft-close {
+    -webkit-animation-name: fadeInLeft-close;
+    animation-name: fadeInLeft-close;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInRight-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+}
+
+@keyframes fadeInRight-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+}
+
+.fadeInRight-close {
+    -webkit-animation-name: fadeInRight-close;
+    animation-name: fadeInRight-close;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInUp-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+}
+
+@keyframes fadeInUp-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px);
+    }
+}
+
+.fadeInUp-close {
+    -webkit-animation-name: fadeInUp-close;
+    animation-name: fadeInUp-close;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.zoom {
+    -webkit-animation-name: zoom;
+    animation-name: zoom;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+}
+
+@-webkit-keyframes zoom-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+@keyframes zoom-close {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+.zoom-close {
+    -webkit-animation-name: zoom-close;
+    animation-name: zoom-close;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+}
+
+@-webkit-keyframes fade-close {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-close {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: .9;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-close {
+    -webkit-animation-name: fade-close;
+    animation-name: fade-close;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background: #252629;
+    margin-top: 200px;
+}
+
+
+/*# sourceMappingURL=wowAlertStyles.css.map */
